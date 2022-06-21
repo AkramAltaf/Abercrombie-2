@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list App</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <label id="new-task-label" for="new-task" style="display: block; margin: 0 0 20px">
+                <b>Add Item</b>
+            </label>
+            <div class="new-tasks">
+                <input id="new-task" type="text" />
+                <button type="button">Add</button>
+            </div>
+        </div>
+        <h3>
+            Todo
+        </h3>
+        <ul id="incomplete-tasks">
+            <li>
+                <input type="checkbox" id="pay-bills" />
+                <label for="pay-bills">Pay Bills</label>
+                <input type="text" id="edit" />
+                <button type="button" class="edit">Edit</button>
+                <button type="button" class="delete">Delete</button>
+            </li>
+            <li class="editMode">
+                <input type="checkbox" id="go-shopping" />
+                <label for="go-shopping">Go Shopping</label>
+                <input type="text" value="Go Shopping" />
+                <button type="button" class="edit">Save</button>
+                <button type="button" class="delete">Delete</button>
+            </li>
+        </ul>
+
+        <h3>
+            Completed
+        </h3>
+        <ul id="completed-tasks">
+            <li>
+                <input type="checkbox" id="see-doctor" checked />
+                <label for="see-doctor">See the Doctor</label>
+                <input type="text" />
+                <button type="button" class="edit">Edit</button>
+                <button type="button" class="delete">Delete</button>
+            </li>
+        </ul>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

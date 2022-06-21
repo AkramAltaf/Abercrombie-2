@@ -1,0 +1,9 @@
+@media(max-width: 375px) {
+    html body .container {
+        width: 100%;
+    }
+
+    html body ul li.editMode input[type=text] {
+        width: 150px;
+      }
+}
